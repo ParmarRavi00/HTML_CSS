@@ -9,7 +9,7 @@
       .heading {
         color: red;
         border: 3px solid black;
-        margin: 32px;
+        background: linear-gradient(white, rgb(77, 77, 144));
       }
       th {
         color: red;
@@ -18,6 +18,13 @@
         width: 700px;
         height: 650px;
         background-color: rgb(163, 228, 228);
+      }
+      .button {
+        background-color: rgb(65, 65, 189);
+        color: white;
+      }
+      .color {
+        border-color: blueviolet;
       }
     </style>
   </head>
@@ -33,14 +40,18 @@
           <th align="left">User Particulars</th>
         </tr>
         <tr>
-          <td colspan="2" align="center">Login ID<input type="text" /></td>
-        </tr>
-        <tr>
-          <td colspan="2" align="center">Password<input type="password" /></td>
+          <td colspan="2" align="center">
+            *Login ID<input class="color" type="text" />
+          </td>
         </tr>
         <tr>
           <td colspan="2" align="center">
-            Confirm Password<input type="password" />
+            *Password<input class="color" type="password" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            *Confirm Password<input class="color" type="password" />
           </td>
         </tr>
         <tr>
@@ -48,7 +59,7 @@
         </tr>
         <tr>
           <td align="right">
-            Salutation
+            *Salutation
             <select name="" id="">
               <option value="" hidden>Select</option>
               <option value="">A</option>
@@ -56,15 +67,15 @@
               <option value="">C</option>
             </select>
           </td>
-          <td>First Name <input type="text" /></td>
+          <td align="right">*First Name <input class="color" type="text" /></td>
         </tr>
         <tr>
-          <td align="right">Middle Name <input type="text" /></td>
-          <td>Last Name <input type="text" /></td>
+          <td align="right">Middle Name <input class="color" type="text" /></td>
+          <td align="right">*Last Name <input class="color" type="text" /></td>
         </tr>
         <tr>
           <td align="right">
-            Resident Status
+            *Resident Status
             <select name="" id="">
               <option value="" hidden>Select</option>
               <option value="">A</option>
@@ -72,8 +83,8 @@
               <option value="">C</option>
             </select>
           </td>
-          <td>
-            Country
+          <td align="right">
+            *Country
             <select name="" id="">
               <option value="" hidden>Select</option>
               <option value="">A</option>
@@ -83,19 +94,23 @@
           </td>
         </tr>
         <tr>
-          <td align="right">Email-ID <input type="email" /></td>
-          <td>Mobile No <input type="number" /></td>
+          <td align="right">*Email-ID <input class="color" type="email" /></td>
+          <td align="right">
+            *Mobile No <input class="color" type="number" />
+          </td>
         </tr>
         <tr>
           <th align="left">Account Particulars</th>
         </tr>
         <tr>
-          <td>15 Digit Account No <input type="number" /></td>
-          <td>Nick Name <input type="text" /></td>
+          <td align="right">
+            *15 Digit Account No <input class="color" type="number" />
+          </td>
+          <td align="right">*Nick Name <input class="color" type="text" /></td>
         </tr>
         <tr>
-          <td>
-            Fund Transfer
+          <td align="right">
+            *Fund Transfer
             <select name="" id="">
               <option value="" hidden>Select</option>
               <option value="">A</option>
@@ -116,8 +131,8 @@
           </td>
         </tr>
         <tr>
-          <td align="right"><input type="submit" /></td>
-          <td><input type="reset" /></td>
+          <td align="right"><input class="button" type="submit" /></td>
+          <td><input class="button" type="reset" /></td>
         </tr>
       </table>
     </div>
