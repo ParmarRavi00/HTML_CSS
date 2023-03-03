@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form_4</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .body {
+        margin: auto;
+        width: 80%;
+        height: 80%;
+        background-color: rgb(182, 182, 209);
+      }
+      .a {
+        text-align: center;
+      }
+      .b {
+        float: left;
+        width: 50%;
+        text-align: center;
+      }
+      .c {
+        float: left;
+        width: 50%;
+        text-align: center;
+      }
+      .d {
+        float: left;
+        width: 50%;
+        text-align: center;
+      }
+      .e {
+        float: left;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+      }
+      .f {
+        clear: left;
+      }
+      .g {
+        width: 11%;
+        margin: auto;
+        padding-left: 2px;
+      }
+      h2 {
+        font-style: inherit;
+        font-size: 32px;
+        color: rgb(143, 21, 21);
+        text-align: center;
+        padding: 2px;
+        background: linear-gradient(white, rgb(102, 102, 224) 60%);
+      }
+      p {
+        margin-left: 6px;
+        color: red;
+        clear: both;
+      }
+      div {
+        border: 1px solid black;
+      }
+      .account div {
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="body">
+        <div class="Heading">
+          <h2>Individual Registration</h2>
+        </div>
+        <br />
+        <p>
+          <strong><b>User Particulars</b></strong>
+        </p>
+        <div class="a">
+          <br />
+          *Login ID <input type="text" /><br /><br />
+          *Password <input type="password" /><br /><br />
+          *Confirm Password <input type="password" />
+        </div>
+        <p>
+          <strong><b>Personal Particulars</b></strong>
+        </p>
+        <div class="personal">
+          <div class="b">
+            *Salutation
+            <select name="" id="">
+              <option value="" hidden>Select</option>
+              <option value="">A</option>
+              <option value="">B</option>
+              <option value="">C</option>
+            </select>
+            <br /><br />
+            Middle Name <input type="text" /> <br /><br />
+            *Resident Status
+            <select name="" id="">
+              <option value="" hidden>Select</option>
+              <option value="">A</option>
+              <option value="">B</option>
+              <option value="">C</option>
+            </select>
+            <br /><br />
+            *Email-ID <input type="email" />
+          </div>
+          <div class="c">
+            *First Name <input type="text" /> <br /><br />
+            *Last Name <input type="text" /> <br /><br />
+            *Country
+            <select name="" id="">
+              <option value="" hidden>Select</option>
+              <option value="">A</option>
+              <option value="">B</option>
+              <option value="">C</option>
+            </select>
+            <br /><br />
+            *Mobile No
+            <input type="number" />
+          </div>
+        </div>
+        <p>
+          <strong><b>Account Particulars</b></strong>
+        </p>
+        <div class="account">
+          <div class="d">
+            <br />
+            *15 Digit Account No <input type="number" /> <br /><br />
+            *Fund Transfer
+            <select name="" id="">
+              <option value="" hidden>Select</option>
+              <option value="">A</option>
+              <option value="">B</option>
+              <option value="">C</option>
+            </select>
+          </div>
+          <div class="e">*Nick Name <input type="text" /></div>
+        </div>
+        <p>
+          <strong><b>DECLARATION</b></strong>
+        </p>
+        <div class="f">
+          <br />
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, ex
+          optio. Nesciunt, voluptas. Accusamus amet nisi itaque fuga omnis totam
+          officia alias rerum iure distinctio quia odio at cum quae dicta ea
+          dolores exercitationem cumque tempora magni repellendus dolorum
+          provident, voluptatibus nulla. Ut alias accusantium aut quidem! Vero
+          minima dolore debitis praesentium quia a laborum consequatur, quam
+          autem tempora magni.
+          <br /><br />
+        </div>
+        <div class="g">
+          <input class="button" type="submit" />
+          <input class="button" type="reset" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
