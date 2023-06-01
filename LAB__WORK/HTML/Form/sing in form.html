@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing In Form</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: url(https://media.istockphoto.com/id/157373207/photo/balanced-stones-on-a-pebble-beach-during-sunset.jpg?s=612x612&w=0&k=20&c=V4Lua2fcDJmGiTb_JQu2EP6XmFLuAo7e3eI3cUXPNec=);
+        background-size: cover;
+        font-family: sans-serif;
+      }
+      .title {
+        /* border: 1px solid black; */
+        text-align: center;
+        padding: 50px 0 20px;
+      }
+      .title h1 {
+        margin: 0px;
+        padding: 0px;
+        text-transform: uppercase;
+        color: #262626;
+        font-size: 36px;
+      }
+      .container {
+        width: 50%;
+        height: 400px;
+        background: #fff;
+        margin: 0 auto;
+        /* border: 2px solid black; */
+        box-shadow: 0 15px 40px skyblue;
+      }
+      .container .left {
+        width: 50%;
+        height: 400px;
+        background: url(https://media.istockphoto.com/id/1079660210/vector/flying-office-documents.jpg?s=612x612&w=0&k=20&c=45pWVxgvlQAngMgYEzSB-9B690eDyG5mWXvw45mcrBo=);
+        background-size: cover;
+        float: left;
+        /* border: 1px solid black; */
+      }
+      .container .right {
+        width: 50%;
+        height: 400px;
+        float: right;
+        /* border: 1px solid black; */
+      }
+      .Formbox {
+        width: 100%;
+        height: 400px;
+        padding: 80px 40px;
+      }
+      .Formbox p {
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;
+        color: navy;
+      }
+      .Formbox input {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .Formbox input[type="text"],
+      .Formbox input[type="password"] {
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none;
+        height: 30px;
+      }
+      .Formbox input[type="text"]:focus,
+      .Formbox input[type="password"]:focus {
+        font-size: 17px;
+        color: dimgray;
+      }
+      .Formbox input[type="submit"] {
+        height: 40px;
+        border: none;
+        background-color: black;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .Formbox input[type="submit"]:hover {
+        background-color: rgb(64, 217, 115);
+      }
+      .Formbox a {
+        font-size: 14px;
+        color: navy;
+        font-weight: bold;
+      }
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title"><h1>Sing In Form</h1></div>
+    <div class="container">
+      <div class="left"></div>
+      <div class="right">
+        <div class="Formbox">
+          <form>
+            <p>User Name</p>
+            <input type="text" placeholder="User Name" />
+            <p>Password</p>
+            <input type="password" placeholder="Password" />
+            <input type="submit" value="Sing In" />
+            <a href="#">Forget Password</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

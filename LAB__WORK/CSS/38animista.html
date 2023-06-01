@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animista_Animation</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .main {
+        width: 250px;
+        height: 250px;
+        background: linear-gradient(45deg, lightgreen, pink, skyblue, orange);
+        font-size: 45px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 250px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: red;
+      }
+      .rotate-scale-up-diag-2 {
+        -webkit-animation: rotate-scale-up-diag-2 0.7s linear both;
+        animation: rotate-scale-up-diag-2 0.7s linear both;
+      }
+      @-webkit-keyframes rotate-scale-up-diag-2 {
+        0% {
+          -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+          transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+        }
+        50% {
+          -webkit-transform: scale(2) rotate3d(-1, 1, 0, 180deg);
+          transform: scale(2) rotate3d(-1, 1, 0, 180deg);
+        }
+        100% {
+          -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+          transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+        }
+      }
+      @keyframes rotate-scale-up-diag-2 {
+        0% {
+          -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+          transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+        }
+        50% {
+          -webkit-transform: scale(2) rotate3d(-1, 1, 0, 180deg);
+          transform: scale(2) rotate3d(-1, 1, 0, 180deg);
+        }
+        100% {
+          -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+          transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main rotate-scale-up-diag-2">Ravirajsinh</div>
+  </body>
+</html>

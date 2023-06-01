@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form_1</title>
+  </head>
+  <body>
+    <form>
+      <b>NAME:</b>
+      <input
+        type="text"
+        placeholder="Type Your Good Name"
+        required
+        pattern="[a-zA-z]{2,5}"
+        title="Please Enter Min. 2 to Max. 5 Latters"
+        name="name"
+      />
+      <br />
+      <br />
+      <b>EMAIL:</b> <input type="email" /> <b>MOBILE NO:</b>
+      <input
+        type="text"
+        required
+        title="Type Only 10-Digit"
+        pattern="[0-9]{10}"
+      />
+      <br />
+      <br />
+      <b>PASSWORD:</b>
+      <input type="password" name="pwd" minlength="3" maxlength="8" />
+      <br />
+      <br />
+      <b>BIRTH DATE:</b> <input type="date" />
+      <br />
+      <br />
+      <b>GENDER:</b> <input type="radio" name="x" />MALE
+      <input type="radio" name="x" />FEMALE <input type="radio" name="x" />OTHER
+      <br />
+      <br />
+      <b>CITY:</b>
+      <select>
+        <option hidden>---Select City---</option>
+        <option>AHEMADABAD</option>
+        <option>SURENDRANAGAR</option>
+        <option>RAJKOT</option>
+        <option>GANDHINAGAR</option>
+      </select>
+      <b>EXAM DATE/TIME:</b> <input type="datetime-local" />
+      <br />
+      <br />
+      <b>ADDRESS:</b> <textarea rows="5" cols="20"></textarea>
+      <br />
+      <br />
+      <b>LANGUAGES:</b> <input type="checkbox" />Gujarati
+      <input type="checkbox" />Hindi <input type="checkbox" />English
+      <br />
+      <br />
+      <b>COLORS:</b> <input type="color" />
+      <br />
+      <br />
+      <b>UPLOAD FILE:</b> <input type="file" />
+      <br />
+      <br />
+      <input type="submit" value="Register" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

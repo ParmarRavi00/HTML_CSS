@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css_Counter</title>
+    <style>
+      /* counter Create */
+      body {
+        counter-reset: AnyName;
+      }
+      h2::before {
+        counter-increment: AnyName;
+        content: counter(AnyName) ". ";
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Hello World</h2>
+    <h2>Hello World</h2>
+    <h2>Hello World</h2>
+    <h2>Hello World</h2>
+    <h2>Hello World</h2>
+  </body>
+</html>

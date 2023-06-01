@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neeon_Navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: "Alkatra", cursive;
+      }
+      .navbar {
+        width: 100%;
+        height: 80px;
+        background-color: coral;
+        margin-top: 2%;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        line-height: 80px;
+        display: flex;
+        justify-content: center;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+        /* position: relative; */
+      }
+      ul li i {
+        font-size: 14px;
+      }
+      li {
+        display: inline;
+        font-size: 17px;
+        padding: 0px 10px;
+      }
+      .li1 {
+        position: relative;
+      }
+      .li1::after {
+        content: "";
+        width: 0%;
+        height: 5px;
+        background-color: brown;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        transition: 1s;
+      }
+      .li1:hover.li1::after {
+        width: 100%;
+      }
+      .li1:hover.li1 i {
+        transform: rotatex(180deg);
+      }
+      .li2 {
+        position: relative;
+      }
+      .li2::after {
+        content: "";
+        width: 0%;
+        height: 5px;
+        background-color: brown;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        transition: 1s;
+      }
+      .li2:hover.li2::after {
+        width: 100%;
+      }
+      .li2:hover.li2 i {
+        transform: rotatex(180deg);
+      }
+      .li3 {
+        position: relative;
+      }
+      .li3::after {
+        content: "";
+        width: 0%;
+        height: 5px;
+        background-color: brown;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        transition: 1s;
+      }
+      .li3:hover.li3::after {
+        width: 100%;
+      }
+      .li3:hover.li3 i {
+        transform: rotatex(180deg);
+      }
+      .li4 {
+        position: relative;
+      }
+      .li4::after {
+        content: "";
+        width: 0%;
+        height: 5px;
+        background-color: brown;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        transition: 1s;
+      }
+      .li4:hover.li4::after {
+        width: 100%;
+      }
+      .li4:hover.li4 i {
+        transform: rotatex(180deg);
+      }
+      .li5 {
+        position: relative;
+      }
+      .li5::after {
+        content: "";
+        width: 0%;
+        height: 5px;
+        background-color: brown;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        transition: 1s;
+      }
+      .li5:hover.li5::after {
+        width: 100%;
+      }
+      .li5:hover.li5 i {
+        transform: rotatex(180deg);
+      }
+      .li6 {
+        position: relative;
+      }
+      .li6::after {
+        content: "";
+        width: 0%;
+        height: 5px;
+        background-color: brown;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        transition: 1s;
+      }
+      .li6:hover.li6::after {
+        width: 100%;
+      }
+      .li6:hover.li6 i {
+        transform: rotatex(180deg);
+      }
+      .li7 {
+        position: relative;
+      }
+      .li7::after {
+        content: "";
+        width: 0%;
+        height: 5px;
+        background-color: brown;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        transition: 1s;
+      }
+      .li7:hover.li7::after {
+        width: 100%;
+      }
+      .li7:hover.li7 i {
+        transform: rotatex(180deg);
+      }
+      .dropdown1 {
+        width: 1500%;
+        height: 0px;
+        background: rgb(145, 225, 65);
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 100%;
+        left: -150%;
+        display: flex;
+        visibility: hidden;
+        transition: 0.5s;
+      }
+      .li1:hover .dropdown1 {
+        height: 260px;
+        visibility: visible;
+      }
+      .dropdown2 {
+        width: 200%;
+        height: 110px;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        text-align: left;
+        padding-left: 30px;
+        background: lightcoral;
+      }
+      .col1,
+      .col2,
+      .col3,
+      .col4 {
+        width: 25%;
+        /* border: 1px solid black; */
+        text-align: left;
+        padding-left: 50px;
+        overflow: hidden;
+      }
+      .col1,
+      .col2,
+      .col3,
+      .col4,
+      p {
+        font-size: 16px;
+        line-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li class="li1">
+          Home <i class="fa-solid fa-angle-down"></i>
+          <div class="dropdown1">
+            <div class="col1">
+              <h3>Column 01</h3>
+              <p>Home01 - Main</p>
+              <p>Home02 - Technology</p>
+              <p>Home03 - Gaming</p>
+              <p>Home04 - Illustration</p>
+              <p>Home05 - Newspaper</p>
+              <p>Home06 - Magazin</p>
+              <p>Home07 - Sports</p>
+            </div>
+            <div class="col2">
+              <h3>Column 02</h3>
+              <p>Home08 - Travels</p>
+              <p>Home09 - Fitness</p>
+              <p>Home10 - Medical</p>
+              <p>Home11 - Business</p>
+              <p>Home12 - Personal</p>
+              <p>Home13 - Food</p>
+              <p>Home14 - Photography</p>
+            </div>
+            <div class="col3">
+              <h3>Column 03</h3>
+              <p>Home15 - Animals</p>
+              <p>Home16 - Music</p>
+              <p>Home17 - Newsblog</p>
+              <p>Home18 - Neeontimes</p>
+              <p>Home19 - Gadget</p>
+              <p>Home20 - Automotive</p>
+              <p>Home21 - Crypto</p>
+            </div>
+            <div class="col4">
+              <h3>Column 04</h3>
+              <p>Home22 - Obituaries</p>
+              <p>Home23 - Videoblog</p>
+              <p>Home24 - Furniture</p>
+              <p>Home25 - Finance</p>
+              <p>Home26 - Podcasdt</p>
+              <p>Home27 - Movie</p>
+              <p>Home22 - Upcoming</p>
+            </div>
+          </div>
+        </li>
+        <li class="li2">
+          Features <i class="fa-solid fa-angle-down"></i>
+          <div class="dropdown2">
+            <p>Author Details</p>
+            <p>Content Table</p>
+            <p>Single Post Layout</p>
+          </div>
+        </li>
+        <li class="li3">Categories <i class="fa-solid fa-angle-down"></i></li>
+        <li class="li4">Elements <i class="fa-solid fa-angle-down"></i></li>
+        <li class="li5">Pages <i class="fa-solid fa-angle-down"></i></li>
+        <li class="li6">Shop <i class="fa-solid fa-angle-down"></i></li>
+        <li class="li7">Contact <i class="fa-solid fa-angle-down"></i></li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conic_Gradient</title>
+    <style>
+      body {
+        background: #000;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        background: transparent;
+        border: 2px solid lightgray;
+        float: left;
+        margin: 15px;
+      }
+
+      #b1 {
+        background: conic-gradient(red, yellow);
+      }
+
+      #b2 {
+        background: conic-gradient(from 45deg, red, yellow);
+      }
+      #b3 {
+        background: conic-gradient(red 0deg, red 90deg, blue, green, yellow);
+      }
+
+      #b4 {
+        background: conic-gradient(
+          yellow,
+          red,
+          blue,
+          green,
+          yellow,
+          skyblue,
+          orange,
+          pink
+        );
+      }
+
+      #b5 {
+        background: conic-gradient(
+          red 0deg,
+          red 90deg,
+          blue 90deg,
+          blue 180deg,
+          yellow 180deg,
+          yellow 270deg,
+          green 270deg,
+          green 360deg
+        );
+      }
+
+      #b6 {
+        background: repeating-conic-gradient(
+          red 0deg,
+          red 20deg,
+          yellow 20deg,
+          yellow 30deg
+        );
+      }
+
+      #b7 {
+        background: conic-gradient(
+          red 0deg,
+          red 90deg,
+          transparent 90deg,
+          transparent 180deg,
+          blue 180deg,
+          blue 270deg,
+          transparent 270deg,
+          transparent 360deg
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="b1"></div>
+    <div class="box" id="b2"></div>
+    <div class="box" id="b3"></div>
+    <div class="box" id="b4"></div>
+    <div class="box" id="b5"></div>
+    <div class="box" id="b6"></div>
+    <div class="box" id="b7"></div>
+  </body>
+</html>

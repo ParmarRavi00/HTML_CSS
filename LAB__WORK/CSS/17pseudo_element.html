@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo_Element</title>
+    <style>
+      input::placeholder {
+        color: red;
+      }
+      h1::first-letter {
+        color: coral;
+        background: navy;
+      }
+      p::first-line {
+        background-color: rgb(111, 145, 174);
+      }
+      ::selection {
+        background-color: coral;
+        color: blue;
+      }
+      /* "  " Ni Vachhe Je Lakhi ye te Print thay, Spache Mukiye to ye pan count thay  &  And je Pan Lakavanu hoy ye Content:"  " ma j lakhay */
+      h2::before {
+        content: "ALL ";
+      }
+      h2::after {
+        content: " XYZ";
+      }
+      /* CSS Antities no Use Karti Vakhate Hammesh Content:"\CODE" j Lakhay 6e Jema "\" Main 6e jena pa6i j CSS Antitie CODE lakhavama aave chhe */
+      h3::before {
+        content: "\2615";
+        /* Pseudo Element ma URL no Use karti Vakhate Content ma Direct URL Lakhavama aave chhe Jema "  " no use thato Nathi */
+      }
+      h3::after {
+        content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhze-QNnca2liBrhRj4CjswGZSkqbhvSDJsQ&usqp=CAU);
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="Type Name" />
+    <h1>Heading</h1>
+    <h1>Heading</h1>
+    <h1>Heading</h1>
+    <h1>Heading</h1>
+    <h1>Heading</h1>
+    <br />
+    <h2>TEXT HEAR</h2>
+    <br />
+    <h3>Radhe</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius distinctio
+      perspiciatis voluptatibus quibusdam sit consequuntur nobis modi, sequi
+      aperiam ipsa magnam amet dolore atque alias obcaecati id inventore
+      necessitatibus ipsam!
+    </p>
+  </body>
+</html>

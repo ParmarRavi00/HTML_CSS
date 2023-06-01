@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task_1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: url(https://img.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .container {
+        width: 400px;
+        height: 600px;
+        border: 1px solid black;
+        margin: 25px auto;
+        border-radius: 20px;
+        background-color: lightgoldenrodyellow;
+      }
+      h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 40px;
+      }
+      .main {
+        margin: 50px 40px 0px;
+        position: relative;
+      }
+      .main p {
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;
+      }
+      .main input {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .main input[type="text"],
+      .main input[type="password"] {
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid black;
+        outline: none;
+        height: 30px;
+        font-size: 16px;
+        padding-left: 30px;
+      }
+      .main input[type="text"] {
+        background-image: url(https://img.icons8.com/ios-glyphs/30/null/user--v1.png);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: 0 5px;
+      }
+      .main input[type="password"] {
+        background-image: url(https://img.icons8.com/material-rounded/24/null/lock--v1.png);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: 0px 4px;
+      }
+      .main input[type="submit"] {
+        margin-top: 30px;
+        height: 35px;
+        background: linear-gradient(to right, lightblue, rgb(207, 142, 129));
+        border-radius: 30px;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .main input[type="submit"]:hover {
+        cursor: pointer;
+        background: black;
+      }
+      input:placeholder-shown:focus {
+        font-size: 12px;
+        outline: none;
+      }
+      .main a {
+        margin-left: 200px;
+      }
+      .icon {
+        text-align: center;
+      }
+      .icon p {
+        color: rgb(30, 30, 229);
+        font-size: 13px;
+      }
+      ul {
+        list-style-type: none;
+        margin-right: 35px;
+      }
+      li {
+        display: inline;
+      }
+      li a {
+        text-decoration: none;
+      }
+      .link {
+        margin-top: 50px;
+        text-align: center;
+      }
+      .link a {
+        margin: 0px;
+        padding: 0px;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <h2>Login</h2>
+        <div class="main">
+          <p>Username</p>
+          <input
+            type="text"
+            placeholder="Type your Username
+          "
+            required
+            pattern="[a-zA-Z]+"
+            title="Please Enter Only Latters"
+          />
+          <p>Password</p>
+          <input
+            type="password"
+            placeholder="Type your Password
+          "
+            required
+            pattern="[0-9]{10}"
+            title="Type Only 10-Digit"
+          />
+          <a href="#">Forgot Password?</a>
+          <input type="submit" value="LOGIN" />
+        </div>
+        <div class="icon">
+          <p>Or sign Up Using</p>
+          <ul>
+            <li>
+              <a href="">
+                <img
+                  src="https://img.icons8.com/color/48/null/facebook-new.png"
+                />
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="https://img.icons8.com/office/43/null/twitter-circled--v1.png"
+              /></a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="https://img.icons8.com/color/48/null/google-plus--v1.png"
+                />
+              </a>
+            </li>
+          </ul>
+          <!-- <i class="fa-brands fa-facebook-f fa-2x"></i>
+          <i class="fa-brands fa-square-twitter fa-2x"></i>
+          <i class="fa-brands fa-google fa-2x"></i> -->
+        </div>
+        <div class="link">
+          <a href="#">Have not account yet?</a> <br />
+          <a href="#">SIGN UP</a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

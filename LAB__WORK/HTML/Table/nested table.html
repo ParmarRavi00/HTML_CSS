@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Table</title>
+  </head>
+  <body>
+    <table border="2" cellpadding="4" align="center">
+      <tr>
+        <td>Col 1</td>
+        <td>
+          <table border="1" cellpadding="4">
+            <tr>
+              <td>Nested Col 1</td>
+              <td>Nested Col 2</td>
+              <td>Nested Col 3</td>
+            </tr>
+            <tr>
+              <td>Nested Col 1</td>
+              <td colspan="2">Nested Col 2</td>
+            </tr>
+            <tr>
+              <td colspan="3">Nested Col 1</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>col 1</td>
+        <td>col 2</td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+@media(max-width:500px){
+
+/* Header section START */
+
+.page_header .page_header_contant .header{
+    padding: 0px 0px 20px;
+}
+
+.page_header_contant .header .social{
+    width: 25%;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.page_header_contant .header .logo{
+    width: 50%;
+}
+
+.page_header_contant .header .logo img{
+    height: 36px;
+    width: 200px;
+}
+.page_header_contant .header .search{
+    width: 25%;
+    font-size: 10px;
+    line-height: 40px;
+}
+
+/* Header section END */
+
+
+/* <!-- Navbar START --> */
+
+.page_header_contant .navbar li{
+    padding: 0px 9px;
+    font-size: 14px;
+}
+
+/* <!-- Navbar END --> */
+
+
+
+/* <!-- Posters START --> */
+
+.posters .left_poster{
+    width: 100%;
+    height: 330px;
+}
+
+.posters .left_poster .left_contant{
+    width: 320px;
+}
+
+.posters .left_poster .left_contant p{
+    font-size: 10px;
+}
+
+.posters .left_poster .left_contant h1{
+    font-size: 26px;
+    padding: 15px 0px;
+}
+
+.posters .left_poster .left_contant ul li{
+    font-size: 15px;
+}
+
+.posters .left_poster .left_contant ul li img{
+    width: 35px;
+    height: 35px;
+}
+
+.posters .right_poster{
+    width: 100%;
+}
+
+.posters .right_poster .right_top{
+    height: 320px;
+}
+
+.posters .right_poster .right_top_contant h1{
+    font-size: 26px;
+}
+
+.posters .right_poster .right_bottom{
+    display: none;
+}
+          
+/* <!-- Posters END --> */
+
+
+/* Contant section START */
+
+.page_contant_section{
+    padding: 50px 80px;
+}
+
+
+/* page_divs_Btn START */
+
+.page_divs_btn ul li{
+    padding: 5px;
+}
+
+.page_divs_btn ul .errow{
+    padding: 10px;
+}
+
+.page_divs_btn ul .errow img{
+    height: 8px;
+}
+
+/* page_divs_Btn END */
+
+/* Contant section END */
+
+
+/* Popular section START */
+
+
+/* Popular section END */
+
+}

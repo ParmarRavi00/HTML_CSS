@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>border_Image</title>
+    <style>
+      div {
+        margin: 15px;
+      }
+      .x {
+        width: 500px;
+        padding: 40px;
+        border: 15px solid rgba(0, 0, 0, 0.5);
+        background: lightpink;
+        border-image: linear-gradient(red, blue);
+        border-image-slice: 1;
+      }
+      .y {
+        width: 500px;
+        padding: 40px;
+        border: 10px solid rgba(0, 0, 0, 0.5);
+        background: lightpink;
+        border-image: linear-gradient(green, black, white, cyan) stretch 30%;
+      }
+      .z {
+        width: 500px;
+        padding: 40px;
+        border: 15px solid rgba(0, 0, 0, 0.5);
+        background: lightpink;
+        border-image: linear-gradient(black, red, cyan) round;
+        border-image-slice: 1;
+      }
+      .bg {
+        width: 500px;
+        padding: 40px;
+        border: 25px solid rgba(0, 0, 0, 0.5);
+        /* background: lightpink; */
+        border-image: url(bg_remove.png) round 40%;
+        /* border-image-slice: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="x">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      officiis laudantium dolor illum cum nam tenetur itaque pariatur ea,
+      aperiam ipsa ad quod atque molestias aliquam expedita, reprehenderit
+      beatae. Aspernatur cum alias fugiat neque? Mollitia sapiente adipisci qui
+      quis voluptas.
+    </div>
+    <div class="y">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      officiis laudantium dolor illum cum nam tenetur itaque pariatur ea,
+      aperiam ipsa ad quod atque molestias aliquam expedita, reprehenderit
+      beatae. Aspernatur cum alias fugiat neque? Mollitia sapiente adipisci qui
+      quis voluptas.
+    </div>
+    <div class="z">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      officiis laudantium dolor illum cum nam tenetur itaque pariatur ea,
+      aperiam ipsa ad quod atque molestias aliquam expedita, reprehenderit
+      beatae. Aspernatur cum alias fugiat neque? Mollitia sapiente adipisci qui
+      quis voluptas.
+    </div>
+    <div class="bg">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      officiis laudantium dolor illum cum nam tenetur itaque pariatur ea,
+      aperiam ipsa ad quod atque molestias aliquam expedita, reprehenderit
+      beatae. Aspernatur cum alias fugiat neque? Mollitia sapiente adipisci qui
+      quis voluptas.
+    </div>
+  </body>
+</html>

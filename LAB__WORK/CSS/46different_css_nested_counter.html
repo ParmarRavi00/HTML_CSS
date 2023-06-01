@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Different_Css_Nested_Counter</title>
+    <style>
+      ol {
+        counter-reset: abc;
+        list-style: none;
+      }
+      li::before {
+        counter-increment: abc;
+        content: counters(abc, ".") " ";
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>
+        Item
+        <ol>
+          <li>item</li>
+
+          <li>
+            item
+            <ol>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+            </ol>
+          </li>
+
+          <li>item</li>
+        </ol>
+      </li>
+
+      <li>
+        Item
+        <ol>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+        </ol>
+      </li>
+
+      <li>
+        Item
+        <ol>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+        </ol>
+      </li>
+    </ol>
+  </body>
+</html>

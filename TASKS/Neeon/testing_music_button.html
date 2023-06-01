@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music_Button_Animation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      .main {
+        width: 100px;
+        height: 100px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto;
+        position: relative;
+        background: lightsalmon;
+        border-radius: 50%;
+      }
+      i {
+        font-size: 28px;
+      }
+      .effect {
+        width: 100px;
+        height: 100px;
+        /* border: 1px solid black; */
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: lightsalmon;
+        z-index: -1;
+        border-radius: 50%;
+        animation-name: play;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      /* .main:hover .effect {
+        scale: 1.5;
+        transition: 1s;
+        opacity: 0;
+      } */
+      .main:hover {
+        background: darkolivegreen;
+      }
+      .main:hover i {
+        color: white;
+      }
+      @keyframes play {
+        from {
+          scale: 1;
+          opacity: 1;
+        }
+        to {
+          scale: 1.5;
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <i class="fa-sharp fa-solid fa-play"></i>
+      <div class="effect"></div>
+    </div>
+  </body>
+</html>

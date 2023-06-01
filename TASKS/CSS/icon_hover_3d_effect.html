@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icon_Hover_3D_Effect</title>
+    <style>
+      .main {
+        width: 100px;
+        height: 100px;
+        /* background: gray; */
+        position: relative;
+        transition: 0.4s;
+        transform-style: preserve-3d;
+      }
+      .fr {
+        width: 100px;
+        height: 100px;
+        background: hotpink;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        backface-visibility: hidden;
+        transform: translateZ(50px);
+      }
+      .bc {
+        width: 100px;
+        height: 100px;
+        background: green;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        backface-visibility: hidden;
+        transform: rotateX(90deg) translateZ(50px);
+      }
+      .main:hover {
+        transform: rotateX(-90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="fr"></div>
+      <div class="bc"></div>
+    </div>
+  </body>
+</html>

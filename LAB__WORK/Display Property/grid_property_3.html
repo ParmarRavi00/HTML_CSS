@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display_Grid_3</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      .main {
+        width: 100%;
+        height: 600px;
+        background: lightgreen;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-gap: 5px;
+      }
+      .x {
+        border: 2px solid red;
+      }
+      .section {
+        display: grid;
+        grid-template-rows: 100px 400px 100px;
+        row-gap: 5px;
+      }
+      .y {
+        border: 2px solid blue;
+      }
+      .article {
+        display: grid;
+        grid-template-columns: 6fr 1fr;
+        column-gap: 5px;
+      }
+      .z {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="x nav">Nav</div>
+
+      <div class="x section">
+        <div class="y">Header</div>
+
+        <div class="y article">
+          <div class="z">Article</div>
+          <div class="z">Ads</div>
+        </div>
+
+        <div class="y">Footer</div>
+      </div>
+    </div>
+  </body>
+</html>

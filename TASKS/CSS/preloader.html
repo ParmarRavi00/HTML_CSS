@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preloader</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .x {
+        width: 200px;
+        height: 200px;
+        border: 12px solid transparent;
+        border-top: 12px solid orangered;
+        margin: 200px auto;
+        padding: 12px;
+        border-radius: 50%;
+        animation: preloader 3s infinite linear;
+      }
+      .y {
+        width: 150px;
+        height: 150px;
+        border: 12px solid transparent;
+        border-top: 12px solid skyblue;
+        padding: 12px;
+        border-radius: 50%;
+        animation: preloader 4s infinite linear;
+      }
+      .z {
+        width: 100px;
+        height: 100px;
+        border: 12px solid transparent;
+        border-top: 12px solid green;
+        border-radius: 50%;
+        animation: preloader 5s infinite linear;
+      }
+      @keyframes preloader {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="x">
+      <div class="y">
+        <div class="z"></div>
+      </div>
+    </div>
+  </body>
+</html>

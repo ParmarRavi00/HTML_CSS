@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music_Player</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: rgb(221, 229, 236);
+      }
+      .main {
+        width: 250px;
+        height: 480px;
+        /* border: 1px solid black; */
+        border-radius: 30px;
+        background-color: rgb(221, 229, 236);
+        box-shadow: 0px 0px 5px darkgray;
+        margin: 100px auto;
+        justify-content: center;
+      }
+      .head {
+        width: 250px;
+        height: 50px;
+        padding: 0px 20px;
+        transform: translateY(10px);
+        /* border: 1px solid green; */
+        text-align: center;
+        line-height: 50px;
+        color: lightslategrey;
+      }
+      .backbtn {
+        width: 30px;
+        height: 30px;
+        /* border: 1px solid black; */
+        border: 3px solid rgb(218, 216, 216);
+        border-radius: 50%;
+        margin-top: 10px;
+        display: flex;
+        float: left;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -8px -8px 15px white, 3px 3px 15px rgb(79, 78, 78);
+        background-color: rgb(232, 224, 224);
+      }
+      .menubtn {
+        width: 30px;
+        height: 30px;
+        /* border: 1px solid black; */
+        border: 3px solid rgb(218, 216, 216);
+        border-radius: 50%;
+        margin-top: 10px;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -8px -8px 15px white, 3px 3px 15px rgb(79, 78, 78);
+        background-color: rgb(232, 224, 224);
+      }
+      .imgbar {
+        width: 250px;
+        height: 320px;
+        /* border: 1px solid black; */
+        transform: translateY(10px);
+      }
+      .text {
+        width: 250px;
+        height: 60px;
+        /* border: 1px solid red; */
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .imgbar img {
+        width: 180px;
+        height: 180px;
+        border: 8px solid rgba(218, 216, 216, 0.1);
+        border-radius: 50%;
+        margin: 10px 35px;
+        box-shadow: -8px -8px 15px white, 3px 3px 15px rgb(79, 78, 78);
+      }
+      .text span {
+        font-size: 12px;
+        color: lightslategrey;
+      }
+      .meter {
+        width: 250px;
+        height: 50px;
+        /* border: 1px solid green; */
+        text-align: center;
+        font-size: 12px;
+      }
+      .meter p {
+        display: flex;
+        display: inline;
+        float: left;
+        margin-left: 10px;
+        transform: translateY(10px);
+      }
+      .meter span {
+        display: flex;
+        display: inline;
+        float: right;
+        margin-right: 10px;
+        transform: translateY(10px);
+      }
+      input[type="range"] {
+        width: 230px;
+        margin-top: 10px;
+      }
+      .playbar {
+        width: 250px;
+        height: 80px;
+        /* border: 1px solid orange; */
+        transform: translateY(10px);
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+      }
+      .b1 {
+        width: 50px;
+        height: 50px;
+        border: 4px solid rgb(218, 216, 216);
+        box-shadow: -8px -8px 15px white, 3px 3px 15px rgb(79, 78, 78);
+        background-color: rgb(232, 224, 224);
+        border-radius: 50%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .b2 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 20px 0px;
+        box-shadow: -8px -8px 15px white, 3px 3px 15px rgb(79, 78, 78);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="head">
+        <div class="backbtn">
+          <img src="https://img.icons8.com/small/16/null/back.png" />
+        </div>
+        PLAYING NOW
+        <div class="menubtn">
+          <img
+            src="https://img.icons8.com/external-freebies-bomsymbols-/91/null/external-burger-general-office-freebies-bomsymbols-.png"
+            width="10px"
+            height="10px"
+          />
+        </div>
+      </div>
+      <div class="imgbar">
+        <img
+          src="https://st4.depositphotos.com/16122460/26848/i/600/depositphotos_268484380-stock-photo-bouquet-of-beautiful-bright-gerbera.jpg"
+          alt=""
+        />
+        <div class="text">
+          <p>Lose it</p>
+          <span>Flume ft. Vic Mensa</span>
+        </div>
+        <div class="meter">
+          <p>1:21</p>
+          <span>3:46</span>
+          <input type="range" />
+        </div>
+      </div>
+      <div class="playbar">
+        <div class="b1">
+          <img src="https://img.icons8.com/ios/30/null/rewind.png" />
+        </div>
+        <div class="b2">
+          <img src="https://img.icons8.com/fluency/62/null/circled-pause.png" />
+        </div>
+        <div class="b1">
+          <img src="https://img.icons8.com/ios/30/null/fast-forward.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

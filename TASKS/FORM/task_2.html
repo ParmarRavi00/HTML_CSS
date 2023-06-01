@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task_2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        /* color: white; */
+      }
+      body {
+        height: 100vh;
+        background: url(https://cdn.pixabay.com/photo/2022/10/04/14/27/cat-7498364_960_720.jpg);
+        background-repeat: no-repeat;
+        /* background-size: 100% 100%; */
+        background-size: cover;
+      }
+      .container {
+        width: 630px;
+        height: 640px;
+        /* border: 1px solid red; */
+        margin-left: 100px;
+      }
+      h2 {
+        font-size: 36px;
+        margin-bottom: -15px;
+      }
+      .x {
+        height: 50px;
+        width: 210px;
+        background-color: white;
+        /* border: 1px solid black; */
+        display: inline-block;
+        color: black;
+      }
+      p {
+        margin-top: -38px;
+        margin-left: 40px;
+        /* transform: translate(10px, -0px); */
+      }
+      input[type="checkbox"] {
+        width: 30px;
+        height: 20px;
+        transform: translate(-3px, 11px);
+        margin-left: 10px;
+      }
+      .logo img {
+        width: 40px;
+        height: 45px;
+        margin-left: 165px;
+        margin-top: -26px;
+        /* transform: translate(162px, -25px); */
+      }
+      .main,
+      .title {
+        color: white;
+        font-size: 18px;
+        /* border: 1px solid green; */
+        padding-bottom: 20px;
+      }
+      input[type="text"],
+      input[type="email"],
+      select {
+        height: 25px;
+        font-size: 16px;
+        /* width: 324px; */
+      }
+      ::placeholder {
+        font-size: 14px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea:focus {
+        border: none;
+        outline: none;
+      }
+      input[type="submit"] {
+        width: 150px;
+        height: 40px;
+        border-radius: 7px;
+        border: 2px solid white;
+        background: transparent;
+        font-weight: bold;
+        color: white;
+      }
+      input[type="submit"]:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <div class="title">
+          <h2>Contact Form</h2>
+          <h5>
+            Please fill in your information and we'll be sending your order in
+            no time.
+          </h5>
+        </div>
+        <div class="main">
+          <label for="">Your Name</label>
+          <input
+            style="width: 242px; margin-left: 48px"
+            type="text"
+            placeholder="First Name"
+            pattern="[a-zA-Z]{2,5}"
+            title="Please Type 2-5 Latters Only"
+          />
+          <input
+            style="width: 242px"
+            type="text"
+            placeholder="Last Name"
+            pattern="[a-zA-Z]{2,5}"
+            title="Please Type 2-5 Latters Only"
+          />
+          <br />
+          <br />
+          <label for="">Your Email</label>
+          <input
+            style="margin-left: 48px; width: 488px"
+            type="email"
+            placeholder="e.g.hello@gmail.com"
+          />
+          <br />
+          <br />
+          <label for="">Phone*</label>
+          <input
+            style="margin-left: 76px; width: 160px"
+            type="text"
+            placeholder="###"
+            pattern="[0-9]{3}"
+            title="Type Only 3-Digits"
+            required
+          />
+          <input
+            style="width: 160px"
+            type="text"
+            placeholder="###"
+            pattern="[0-9]{3}"
+            title="Type Only 3-Digits"
+            required
+          />
+          <input
+            style="width: 160px"
+            type="text"
+            placeholder="####"
+            pattern="[0-9]{4}"
+            title="Type Only 4-Digits"
+            required
+          />
+          <br />
+          <br />
+          <label for="">Message Subject*</label>
+          <select style="width: 324px" required name="" id="">
+            <option value="" hidden>Other</option>
+            <option value="">x</option>
+            <option value="">y</option>
+            <option value="">z</option>
+          </select>
+          <br />
+          <br />
+          <label for="">Message*</label>
+          <textarea
+            style="margin-left: 59px; font-size: 16px"
+            required
+            rows="5"
+            cols="52"
+          ></textarea>
+          <br />
+          <br />
+          <label for="">Verification*</label>
+          <div style="margin-left: 37px" class="x">
+            <input type="checkbox" required />
+            <div class="logo">
+              <img
+                src="https://st4.depositphotos.com/34104448/41434/v/600/depositphotos_414347666-stock-illustration-recaptcha-vector-icon-i-am.jpg"
+                alt=""
+              />
+            </div>
+            <p>I'm not a robot</p>
+          </div>
+          <br />
+          <br />
+          <hr />
+          <br />
+          <input type="submit" value="SUBMIT FORM" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover_Effect_Navbar_Div</title>
+    <style>
+      .nav {
+        background-color: aqua;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        padding-right: 100px;
+      }
+      .main {
+        border: 2px solid transparent;
+        position: relative;
+        margin-left: 90px;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .x {
+        width: 0%;
+        height: 3px;
+        background-color: black;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        transition: 1s;
+      }
+      .main:hover .x {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <i class="main">
+        Home
+        <div class="x"></div>
+      </i>
+      <i class="main">
+        About
+        <div class="x"></div>
+      </i>
+      <i class="main">
+        Services
+        <div class="x"></div>
+      </i>
+      <i class="main">
+        Contact Us
+        <div class="x"></div>
+      </i>
+    </div>
+  </body>
+</html>

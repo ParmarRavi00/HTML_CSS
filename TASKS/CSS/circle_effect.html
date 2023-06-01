@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle_Effect</title>
+    <style>
+      .main {
+        width: 100px;
+        height: 100px;
+        margin: 200px auto;
+        border-radius: 50%;
+        position: relative;
+        background-color: lightcoral;
+        animation: color 2s linear infinite;
+      }
+
+      .circle1,
+      .circle2,
+      .circle3 {
+        width: 100px;
+        height: 100px;
+        background: coral;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .circle1 {
+        animation: circle1 2s linear infinite;
+      }
+
+      .circle2 {
+        animation: circle2 2s linear infinite;
+      }
+
+      .circle3 {
+        animation: circle3 2s linear infinite;
+      }
+
+      @keyframes color {
+        form {
+          filter: hue-rotate(0deg);
+        }
+        to {
+          filter: hue-rotate(360deg);
+        }
+      }
+
+      @keyframes circle1 {
+        form {
+          scale: 1;
+          opacity: 1;
+        }
+        to {
+          scale: 1.3;
+          opacity: 0;
+        }
+      }
+      @keyframes circle2 {
+        form {
+          scale: 1.3;
+          opacity: 0;
+        }
+        to {
+          scale: 1.6;
+          opacity: 0;
+        }
+      }
+      @keyframes circle3 {
+        form {
+          scale: 1.6;
+          opacity: 1;
+        }
+        to {
+          scale: 1.9;
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+    </div>
+  </body>
+</html>

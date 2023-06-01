@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact_Us</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background: linear-gradient(
+          to right,
+          rgba(206, 116, 52, 0.701),
+          white,
+          rgba(206, 116, 52, 0.701)
+        );
+        font-family: "Shantell Sans", cursive;
+      }
+      .container {
+        width: 400px;
+        height: 480px;
+        /* border: 1px solid black; */
+        box-shadow: 2px 2px 3px whitesmoke, -2px -2px 3px whitesmoke;
+        border-radius: 20px;
+        margin: 60px auto;
+        background-color: whitesmoke;
+      }
+      .heading {
+        /* border: 1px solid green; */
+        text-align: center;
+        padding: 25px;
+      }
+      .heading h1 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+      .heading p {
+        font-size: 18px;
+        padding-top: 10px;
+      }
+      .main {
+        /* border: 1px solid black; */
+        height: 35%;
+        margin: 25px;
+        margin-bottom: 30px;
+      }
+      .main input {
+        width: 49%;
+        height: 45px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding-left: 5px;
+        font-weight: bold;
+      }
+      :focus {
+        outline: none;
+      }
+      .last input[type="submit"] {
+        width: 95%;
+        margin: 0 0 0 10px;
+        height: 42px;
+        border-radius: 5px;
+        background-color: rgb(255, 137, 94);
+        font-size: 20px;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .last p {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 25px;
+      }
+      input:focus {
+        font-size: 18px !important;
+        padding-left: 10px;
+        font-weight: 400;
+      }
+      .last input:hover {
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="container">
+        <div class="heading">
+          <h1>Contact Us</h1>
+          <p>We will get back to you asap!</p>
+        </div>
+        <div class="main">
+          <input
+            style="float: left"
+            type="text"
+            placeholder="First Name"
+            pattern="[a-zA-Z]{2,5}"
+            title="Please Type Min.2 to Max.5 Text Only"
+          />
+          <input
+            style="margin-left: 6px"
+            type="text"
+            placeholder="Last Name"
+            pattern="[a-zA-Z]{2,5}"
+            title="Please Type Min.2 to Max.5 Text Only"
+          />
+          <input style="width: 100%" type="email" placeholder="Email" />
+          <input
+            style="width: 100%"
+            type="text"
+            placeholder="Phone Number"
+            required
+            pattern="[0-9]{10}"
+            title="Please Type Only 10-Digit"
+          />
+        </div>
+        <div class="last">
+          <input type="submit" value="Send" />
+          <p>You may also call us at 0000-000-000</p>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

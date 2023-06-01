@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite_Shoppy_Bg_Hover_Task</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .x {
+        width: 500px;
+        height: 250px;
+        border: 1px solid black;
+        margin: 200px auto;
+        background: url(https://augustav.com/images/bot_2.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: 32px;
+        letter-spacing: 10px;
+        padding-top: 110px;
+        padding-left: 110px;
+        position: relative;
+        /* overflow: hidden; */
+      }
+      span {
+        color: aqua;
+        font-weight: bold;
+      }
+      ::before {
+        content: "";
+        width: 0%;
+        height: 0%;
+        /* border: 1px solid black; */
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.05);
+        position: absolute;
+        transition: 1s;
+      }
+      ::after {
+        content: "";
+        width: 0%;
+        height: 0%;
+        /* border: 1px solid black; */
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: rgba(0, 0, 0, 0.05);
+        transition: 1s;
+      }
+      .x:hover ::before {
+        height: 100%;
+        width: 100%;
+      }
+      .x:hover ::after {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="x">
+      Flat <span>50%</span> Offer
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+  </body>
+</html>

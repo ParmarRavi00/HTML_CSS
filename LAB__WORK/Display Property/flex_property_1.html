@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display_Flex_1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .main1 {
+        width: 100%;
+        height: 200px;
+        /* border: 1px solid black; */
+        display: flex;
+      }
+      .box1 {
+        width: 50px;
+        border-radius: 5px;
+        background: lightcoral;
+        flex-grow: 1;
+        margin: 2px;
+        padding: 5px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .first {
+        flex-grow: 3;
+        /* flex-shrink: 2; */
+      }
+      .second {
+        order: 3;
+        /* flex-basis: 200px; */
+        flex-grow: 2;
+        flex-shrink: 3;
+      }
+      .therd {
+        flex-shrink: 2;
+      }
+      .nested1 {
+        width: 100%;
+        height: 50px;
+        /* border: 1px solid black; */
+        display: flex;
+      }
+      .nest1 {
+        height: 50px;
+        /* border: 1px solid black; */
+        border-radius: 5px;
+        margin: 2px;
+        background: lightcyan;
+        flex-grow: 1;
+        line-height: 40px;
+        padding: 5px;
+      }
+      .nested2 {
+        width: 100%;
+        height: 50px;
+        /* border: 1px solid black; */
+        display: flex;
+        margin: 5px 0px;
+      }
+      .nest2 {
+        height: 50px;
+        /* border: 1px solid black; */
+        border-radius: 5px;
+        margin: 2px;
+        background: lightcyan;
+        flex-grow: 1;
+        line-height: 40px;
+        padding: 5px;
+      }
+      .nested3 {
+        width: 100%;
+        height: 50px;
+        /* border: 1px solid black; */
+        display: flex;
+        margin: 5px 0px;
+      }
+      .nest3 {
+        height: 50px;
+        /* border: 1px solid black; */
+        border-radius: 5px;
+        margin: 2px;
+        background: lightcyan;
+        flex-grow: 1;
+        line-height: 40px;
+        padding: 5px;
+      }
+      .main2 {
+        width: 100%;
+        height: 50px;
+        /* border: 1px solid black; */
+        display: flex;
+      }
+      .box2 {
+        border-radius: 5px;
+        background: lightcoral;
+        flex-grow: 1;
+        margin: 2px;
+        padding-left: 5px;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .main3 {
+        width: 100%;
+        height: 50px;
+        /* border: 1px solid black; */
+        display: flex;
+      }
+      .box3 {
+        border-radius: 5px;
+        background: lightcoral;
+        flex-grow: 1;
+        margin: 2px;
+        padding-left: 5px;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main1">
+      <div class="box1 first">
+        1
+        <div class="nested1">
+          <div class="nest1">1</div>
+          <div class="nest1">2</div>
+          <div class="nest1">3</div>
+        </div>
+        <!-- --------------------------- -->
+        <div class="nested2">
+          <div class="nest2">1</div>
+          <div class="nest2">2</div>
+          <div class="nest2">3</div>
+          <div class="nest2">4</div>
+        </div>
+        <!-- ------------------------------------ -->
+        <div class="nested3">
+          <div class="nest3">1</div>
+          <div class="nest3">2</div>
+          <div class="nest3">3</div>
+          <div class="nest3">4</div>
+          <div class="nest3">5</div>
+        </div>
+      </div>
+      <div class="box1 second">2</div>
+      <div class="box1 therd">3</div>
+    </div>
+    <div class="main2">
+      <div class="box2">1</div>
+      <div class="box2">2</div>
+      <div class="box2">3</div>
+      <div class="box2">4</div>
+    </div>
+    <div class="main3">
+      <div class="box3">1</div>
+      <div class="box3">2</div>
+      <div class="box3">3</div>
+      <div class="box3">4</div>
+      <div class="box3">5</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  margin: 0px;
+  font-family: "Alkatra", cursive;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+header {
+  padding: 40px;
+  background-color: rgb(17, 124, 143);
+}
+
+nav, footer {
+  display: flex;
+  background-color: #333;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+
+main {
+  background-color: rgb(254, 250, 253);
+  text-align: center;
+}
+
+h2 {
+  padding: 20px;
+}
+
+section:nth-child(even) {
+  background-color: rgb(241, 241, 241);
+}
+
+section {
+  min-height: 70vh;
+}
+
+iframe {
+  height: 50vh;
+  padding: 20px 5px;
+}
+
+embed {
+  padding: 20px 5px;
+}
+
+section a {
+  margin: 10px;
+}
+
+section h4 {
+  margin: 10px 40px;
+  font-size: 18px;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  float: left;
+  color: white;
+}
+
+.flax-align-right {
+  margin-left: auto;
+}
+
+.menu-btn:hover {
+  background: white;
+  color: black;
+}
+
+section h2 span {
+  background: linear-gradient(to right, #f5d837, #bbb812);
+  border-radius: 50px;
+  padding: 10px 55px;
+  color: white;
+}
+
+.books{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section img {
+  width: 20%;
+  height: 350px;
+}
+
+.founder_img {
+  width: 22%;
+  height: 250px;
+  border-radius: 50%;
+  background: rgb(17, 124, 143);
+}
+
+.founder_name {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  word-spacing: 8px;
+  margin: -5px 0px 20px;
+}
+
+.sm_link a{
+    background-color: rgb(125, 125, 125, 0.4);
+    padding: 5px 10px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.sm_link a i{
+    margin: 5px;
+}
+
+.sm_link a:hover{
+    background-color: rgb(30, 30, 30, 0.4);
+}
+.sm_youtube{
+    color: rgb(255, 0, 0);
+}
+
+.sm_linkedin{
+    color: rgb(10, 102, 194);
+}
+
+.sm_instagram{
+    color: #dd2a7d;
+}
+
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+  .flax-align-right {
+    margin-left: 0px;
+  }
+  section img {
+    width: 40%;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+

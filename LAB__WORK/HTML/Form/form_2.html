@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form_2</title>
+  </head>
+  <body>
+    <form>
+      <b> Enter Your Full Name:</b><br />
+      <input
+        type="text"
+        required
+        pattern="[a-zA-Z]{2,5}"
+        title="Please Type Min.2 to Max.5 Letters"
+        placeholder="Enter Your Good Name"
+      />
+      <br />
+      <b> Enter Your Email:</b><br /><input type="text" />
+      <br />
+      <b> Enter Your Password:</b><br /><input
+        type="password"
+        name="pwd"
+        minlength="2"
+        maxlength="8"
+      />
+      <br />
+      <b> Confirm Your Password:</b><br /><input
+        type="password"
+        name="pwd"
+        minlength="2"
+        maxlength="8"
+      />
+      <br />
+      <br />
+      <b> Enter Your Gender:</b><br /><input type="radio" name="x" />Male <br />
+      <input type="radio" name="x" />Female
+      <br />
+      <input type="radio" name="x" />Other
+      <br />
+      <br />
+      <b> Enter Your Address:</b><br /><textarea rows="3" cols="20"></textarea>
+      <br />
+      <input type="submit" value="Sign-up" />
+    </form>
+  </body>
+</html>

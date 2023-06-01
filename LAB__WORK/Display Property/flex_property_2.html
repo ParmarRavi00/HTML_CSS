@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display_Flex_2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .main {
+        width: 100%;
+        height: 650px;
+        /* background: lightskyblue; */
+        display: flex;
+      }
+      .nav {
+        width: 20%;
+        height: 650px;
+        /* border: 2px solid black; */
+        background: khaki;
+      }
+      .section {
+        width: 80%;
+        height: 650px;
+        /* border: 2px solid red; */
+      }
+      .header,
+      .footer {
+        width: 100%;
+        height: 150px;
+        /* border: 2px solid black; */
+        background: lightgreen;
+      }
+      .article {
+        width: 100%;
+        height: 350px;
+        /* border: 2px solid black; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">Nav</div>
+      <div class="section">
+        <div class="header">Header</div>
+        <div class="article">Article</div>
+        <div class="footer">Footer</div>
+      </div>
+    </div>
+  </body>
+</html>

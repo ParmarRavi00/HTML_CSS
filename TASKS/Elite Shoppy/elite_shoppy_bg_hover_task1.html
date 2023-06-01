@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite_Shoppy_bg_hover_Task</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .x {
+        width: 600px;
+        height: 350px;
+        /* border: 1px solid black; */
+        background: url(https://augustav.com/images/bottom1.jpg);
+        background-size: 105% 100%;
+        border: 15px solid rgba(255, 255, 255, 0.2);
+        background-origin: border-box;
+        /* background-repeat: no-repeat; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-position: -30px 0;
+        transition: 0.5s;
+      }
+      .x:hover {
+        background-position: 0px 0px;
+      }
+      .y {
+        width: 500px;
+        height: 220px;
+        border: 5px solid white;
+        color: white;
+        padding: 130px 0px 50px 280px;
+        font-size: 18px;
+        letter-spacing: 3px;
+        opacity: 0;
+        transition: 0.4s;
+        position: absolute;
+        margin-left: -30px;
+        background-color: transparent;
+      }
+      .x:hover .y {
+        opacity: 1;
+        margin-left: 0px;
+      }
+      span {
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        letter-spacing: 5px;
+        top: 160px;
+        left: 320px;
+      }
+      span::first-letter {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="x">
+      <span>FALL AHED</span>
+      <div class="y">New Arrivals</div>
+    </div>
+  </body>
+</html>

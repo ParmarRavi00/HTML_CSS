@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productlist by Hover Navbar</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      .navbar {
+        /* background-color: aquamarine; */
+        width: 80%;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        margin-left: 10%;
+        margin-top: 20px;
+      }
+      li {
+        display: inline;
+        font-size: 22px;
+        /* font-weight: bold; */
+        padding: 10px 87px;
+        position: relative;
+      }
+      span {
+        color: #fc636b;
+        position: absolute;
+        top: 25px;
+        left: 45%;
+        visibility: hidden;
+      }
+      .li1:hover {
+        background-color: #fc636b;
+      }
+      .li1:hover span {
+        visibility: visible;
+      }
+      .li2:hover {
+        background-color: #fc636b;
+      }
+      .li2:hover span {
+        visibility: visible;
+      }
+      .li3:hover {
+        background-color: #fc636b;
+      }
+      .li3:hover span {
+        visibility: visible;
+      }
+      .li4:hover {
+        background-color: #fc636b;
+      }
+      .li4:hover span {
+        visibility: visible;
+      }
+      .product {
+        width: 100%;
+        height: 980px;
+        border: 2px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        margin-top: 20px;
+        position: absolute;
+        /* visibility: hidden; */
+      }
+      .main {
+        height: 410px;
+        width: 260px;
+        /* border: 2px solid black; */
+        box-shadow: 0px 0px 15px 0px #d6d6d6, 0px 0px 15px 0px #d6d6d6;
+        margin: 25px 15px 0px;
+      }
+      .img {
+        /* border: 1px solid black; */
+        width: 260px;
+        height: 250px;
+        position: relative;
+        cursor: pointer;
+      }
+      .img img {
+        width: 260px;
+        height: 250px;
+        padding: 30px 50px;
+      }
+      .content {
+        width: 260px;
+        height: 150px;
+        /* border: 1px solid red; */
+      }
+      p {
+        color: #fc636b;
+        text-align: center;
+        font-size: 18px;
+        display: block;
+      }
+      pre {
+        font-size: 18px;
+        text-align: center;
+        transform: translateY(-10px);
+      }
+      .btn {
+        width: 200px;
+        height: 32px;
+        background: #2fdab8;
+        font-size: 14px;
+        color: white;
+        margin-left: 30px;
+        text-align: center;
+        line-height: 32px;
+        transition: 0.1s;
+        cursor: pointer;
+      }
+      pre strike {
+        color: lightslategray;
+      }
+      .btn:hover {
+        outline: 4px solid #2fdab8;
+        outline-offset: 4px;
+      }
+      .slide {
+        width: 260px;
+        height: 38px;
+        font-size: 16px;
+        background: black;
+        color: white;
+        text-align: center;
+        line-height: 38px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        opacity: 0;
+      }
+      .img:hover .slide {
+        top: 200px;
+        left: 0;
+        opacity: 1;
+      }
+      .slide:hover {
+        background: lightseagreen;
+      }
+      .new {
+        width: 60px;
+        height: 25px;
+        background: #fc636b;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        line-height: 25px;
+        top: 0px;
+        right: 0px;
+        position: absolute;
+      }
+      .dropdown1 {
+        width: 1200px;
+        height: 900px;
+        /* border: 1px solid black; */
+        position: absolute;
+        top: 110%;
+        left: -20.5%;
+        display: flex;
+        flex-wrap: wrap;
+        visibility: hidden;
+      }
+      .li1:hover .dropdown1 {
+        visibility: visible;
+      }
+      .dropdown2 {
+        width: 1200px;
+        height: 500px;
+        /* border: 1px solid black; */
+        position: absolute;
+        top: 110%;
+        left: -105%;
+        display: flex;
+        flex-wrap: wrap;
+        visibility: hidden;
+      }
+      .li2:hover .dropdown2 {
+        visibility: visible;
+      }
+      .dropdown3 {
+        width: 1200px;
+        height: 500px;
+        /* border: 1px solid black; */
+        position: absolute;
+        top: 110%;
+        left: -242%;
+        display: flex;
+        flex-wrap: wrap;
+        visibility: hidden;
+      }
+      .li3:hover .dropdown3 {
+        visibility: visible;
+      }
+      .dropdown4 {
+        width: 1200px;
+        height: 500px;
+        /* border: 1px solid black; */
+        position: absolute;
+        top: 110%;
+        left: -275%;
+        display: flex;
+        flex-wrap: wrap;
+        visibility: hidden;
+      }
+      .li4:hover .dropdown4 {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li class="li1">
+          MEN'S
+          <span>&#9660;</span>
+          <div class="dropdown1 x">
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img src="https://augustav.com/images/m1.jpg" alt="" />
+              </div>
+              <div class="content">
+                <p>Formal Blue Shirt</p>
+                <pre>$45.99 <strike>$69.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Gabi Full Sleeve Sweatshirt</p>
+                <pre>$45.99 <strike>$69.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Dark Blue Track Pants</p>
+                <pre>$80.99 <strike>$89.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Round Neck Black T-Shirt</p>
+                <pre>$190.99 <strike>$159.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Men's Black Jeans</p>
+                <pre>$60.99 <strike>$90.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Analog Watch</p>
+                <pre>$160.99 <strike>$290.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Reversible Belt</p>
+                <pre>$30.99 <strike>$50.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m8.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Party Men's Blazer</p>
+                <pre>$260.99 <strike>$390.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+          </div>
+        </li>
+
+        <!-- -------------------------------------------------------- -->
+
+        <li class="li1, li2">
+          WOMEN'S
+          <span>&#9660;</span>
+          <div class="dropdown2">
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>A-line Black Skirt</p>
+                <pre>$130.99 <strike>$189.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Sleeveless Solid Blue Top</p>
+                <pre>$140.99 <strike>$189.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Skinny Jeans</p>
+                <pre>$150.99 <strike>$189.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Black Basic Shorts</p>
+                <pre>$120.99 <strike>$189.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Pink Track Pants</p>
+                <pre>$220.99 <strike>$389.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Analog Watch</p>
+                <pre>$320.99 <strike>$489.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w7.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Ankle Length Socks</p>
+                <pre>$100.99 <strike>$159.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w8.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Reebok Women's Tights</p>
+                <pre>$130.99 <strike>$169.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+          </div>
+        </li>
+
+        <!-- -------------------------------------------------------- -->
+
+        <li class="li1, li3">
+          BAGS
+          <span>&#9660;</span>
+          <div class="dropdown3">
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Laptop Messenger Bag</p>
+                <pre>$140.99 <strike>$169.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Puma Backpack</p>
+                <pre>$127.99 <strike>$169.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Laptop Backpack</p>
+                <pre>$120.99 <strike>$189.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Travel Duffel Bag</p>
+                <pre>$190.99 <strike>$259.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Hand-held Bag</p>
+                <pre>$190.99 <strike>$259.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Butterflies Bag</p>
+                <pre>$190.99 <strike>$259.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b7.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Costa Swiss Bag</p>
+                <pre>$290.99 <strike>$359.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b8.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Noble Designs Bag</p>
+                <pre>$120.99 <strike>$159.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+          </div>
+        </li>
+
+        <!-- ------------------------------------------------------ -->
+
+        <li class="li1, li4">
+          FOOTWEAR
+          <span>&#9660;</span>
+          <div class="dropdown4">
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Running Shoes</p>
+                <pre>$80.99 <strike>$89.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Shoetopia Lace Up</p>
+                <pre>$90.99 <strike>$59.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Steemo Casuals(Black)</p>
+                <pre>$90.99 <strike>$59.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Benetton Flip Flops</p>
+                <pre>$40.99 <strike>$99.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Moonwalk Bellies</p>
+                <pre>$80.99 <strike>$99.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Aero Canvas Loafers</p>
+                <pre>$120.99 <strike>$199.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s7.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Sparx Sporty Canvas Shoes</p>
+                <pre>$160.99 <strike>$199.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+
+            <!-- Product Card START -->
+            <div class="main">
+              <div class="img">
+                <div class="slide">QUICK VIEW</div>
+                <div class="new">NEW</div>
+                <img
+                  src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s8.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <p>Women BLACK Heels</p>
+                <pre>$180.99 <strike>$199.71</strike></pre>
+                <div class="btn">ADD TO CART</div>
+              </div>
+            </div>
+            <!-- Product Card END -->
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

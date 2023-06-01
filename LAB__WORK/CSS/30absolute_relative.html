@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absolute_Realtive</title>
+    <style>
+      .foreground img {
+        width: 300px;
+        height: 300px;
+      }
+      .foreground {
+        position: relative;
+      }
+      .foreground span {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        font-size: 36px;
+      }
+      .background {
+        background: url(https://www.planetware.com/wpimages/2019/11/canada-in-pictures-beautiful-places-to-photograph-morraine-lake.jpg);
+        height: 300px;
+        width: 300px;
+        font-size: 36px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="foreground">
+      <img
+        src="https://www.planetware.com/wpimages/2019/11/canada-in-pictures-beautiful-places-to-photograph-morraine-lake.jpg"
+        alt=""
+      /><span>Namaste World</span>
+    </div>
+    <div class="background">Namaste World</div>
+  </body>
+</html>

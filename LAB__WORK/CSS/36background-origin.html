@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background-Origin</title>
+    <style>
+      div {
+        margin: 15px;
+      }
+      .x {
+        width: 500px;
+        padding: 40px;
+        border: 30px solid rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        color: white;
+        background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg);
+        background-size: 100% 100%;
+        background-origin: padding-box;
+
+        /* background-origin: padding-box; ------ By Difoult Value */
+      }
+      .y {
+        width: 500px;
+        padding: 40px;
+        border: 30px solid rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        color: white;
+        background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg);
+        background-size: 100% 100%;
+        background-origin: border-box;
+
+        /* background-origin: border-box; */
+      }
+      .z {
+        width: 500px;
+        padding: 40px;
+        border: 30px solid rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        color: white;
+        background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+
+        /* background-origin: content-box; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="x">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      officiis laudantium dolor illum cum nam tenetur itaque pariatur ea,
+      aperiam ipsa ad quod atque molestias aliquam expedita, reprehenderit
+      beatae. Aspernatur cum alias fugiat neque? Mollitia sapiente adipisci qui
+      quis voluptas.
+    </div>
+    <div class="y">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      officiis laudantium dolor illum cum nam tenetur itaque pariatur ea,
+      aperiam ipsa ad quod atque molestias aliquam expedita, reprehenderit
+      beatae. Aspernatur cum alias fugiat neque? Mollitia sapiente adipisci qui
+      quis voluptas.
+    </div>
+    <div class="z">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      officiis laudantium dolor illum cum nam tenetur itaque pariatur ea,
+      aperiam ipsa ad quod atque molestias aliquam expedita, reprehenderit
+      beatae. Aspernatur cum alias fugiat neque? Mollitia sapiente adipisci qui
+      quis voluptas.
+    </div>
+  </body>
+</html>

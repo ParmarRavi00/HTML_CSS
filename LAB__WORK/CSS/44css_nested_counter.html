@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css_Nested_Counter</title>
+    <style>
+      body {
+        counter-reset: xyz;
+      }
+      h2 {
+        counter-reset: xyz1;
+      }
+      h2::before {
+        counter-increment: xyz;
+        content: counter(xyz) ". ";
+      }
+      h3::before {
+        counter-increment: xyz1;
+        content: counter(xyz) "." counter(xyz1) " ";
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Namaste India</h2>
+    <h3>Hello Gujarat</h3>
+    <h3>Hello Gujarat</h3>
+    <h3>Hello Gujarat</h3>
+    <h3>Hello Gujarat</h3>
+
+    <h2>Namaste India</h2>
+    <h3>Hello Gujarat</h3>
+    <h3>Hello Gujarat</h3>
+    <h3>Hello Gujarat</h3>
+
+    <h2>Namaste India</h2>
+    <h3>Hello Gujarat</h3>
+    <h3>Hello Gujarat</h3>
+    <h3>Hello Gujarat</h3>
+
+    <h2>Namaste India</h2>
+    <h3>Hello Gujarat</h3>
+    <h3>Hello Gujarat</h3>
+    <h3>Hello Gujarat</h3>
+
+    <h2>Namaste India</h2>
+    <h3>Hello Gujarat</h3>
+    <h3>Hello Gujarat</h3>
+    <h3>Hello Gujarat</h3>
+  </body>
+</html>

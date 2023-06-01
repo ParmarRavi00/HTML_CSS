@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover_Effect_Before_After</title>
+    <style>
+      .x {
+        width: 200px;
+        height: 50px;
+        background: rgb(169, 169, 55);
+        margin: 200px auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 50px;
+      }
+      .x::before {
+        content: "Ravirajsinh";
+        font-size: 30px;
+        width: 200px;
+        height: 50px;
+        background: rgb(217, 120, 64);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: 1s;
+      }
+      .x:hover::before {
+        left: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="x"></div>
+  </body>
+</html>

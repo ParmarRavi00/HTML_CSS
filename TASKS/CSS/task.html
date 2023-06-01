@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .main {
+        width: 23%;
+      }
+
+      .main .main_1 {
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+      }
+
+      .main_1 .image_div {
+        height: 300px;
+        border-radius: 15px;
+        position: relative;
+      }
+
+      .main_1 .image_div .lable1 {
+        height: 15px;
+        width: 35px;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        border-radius: 2px;
+        background-color: red;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      .main_1 .image_div .lable2 {
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      .main_1 .image_div img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+      }
+      .main_1 .image_info {
+        padding: 10px;
+      }
+      .main_1 .image_info .heading h3 {
+        display: inline;
+      }
+      .main_1 .image_info .heading p {
+        display: inline;
+        float: right;
+        font-weight: 600;
+      }
+      .main_1 .image_info .head_info h3 {
+        display: inline;
+      }
+      .main_1 .image_info .head_info p {
+        display: inline;
+        float: right;
+        font-size: 12px;
+        color: slategray;
+        font-weight: 600;
+        padding-top: 4px;
+      }
+
+      .main_1 .image_info .circle {
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+      }
+
+      .main_1 .image_info .circle .cir1 {
+        width: 50%;
+      }
+      .main_1 .image_info .circle .cir2 {
+        width: 50%;
+        text-align: right;
+      }
+
+      .main_1 .image_info .circle .cir1 .cir_x {
+        width: 20px;
+        height: 20px;
+        border: 3px solid gray;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .main_1 .image_info .circle .cir1 .cir_y {
+        width: 20px;
+        height: 20px;
+        border: 3px solid red;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .main_1 .image_info .circle .cir1 .cir_z {
+        width: 20px;
+        height: 20px;
+        border: 3px solid lightseagreen;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .main_1 .image_info .circle .cir2 .cir_x {
+        width: 20px;
+        height: 20px;
+        border: 2px solid gray;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        color: gray;
+      }
+
+      .main .main_1 .image_info .rating {
+        height: 20px;
+        margin-top: 4px;
+      }
+
+      .main .main_1 .image_info .rating p {
+        display: inline;
+        font-size: 14px;
+      }
+      .main .main_1 .image_info .rating span {
+        float: right;
+        font-size: 15px;
+        font-weight: 600;
+        color: purple;
+      }
+
+      .main .main_2 {
+        margin-top: 25px;
+      }
+
+      .main .main_2 .additional {
+        height: 60px;
+        border-radius: 15px;
+        display: flex;
+        overflow: hidden;
+        box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+      }
+
+      .main_2 .additional .idea {
+        width: 70%;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 8px;
+      }
+      .main_2 .additional .idea p {
+        font-size: 12px;
+        color: gray;
+      }
+      .main_2 .additional .idea span {
+        font-weight: 600;
+        color: red;
+      }
+      .main_2 .additional .off {
+        width: 30%;
+        text-align: center;
+        line-height: 20px;
+        background-color: purple;
+        padding-top: 8px;
+        color: white;
+      }
+
+      @media (max-width: 500px) {
+        .main {
+          width: 48%;
+        }
+
+        .main_1 .image_div {
+          height: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- -------------Cart START------------------- -->
+      <div class="main">
+        <div class="main_1">
+          <div class="image_div">
+            <img src="01.jpg" alt="" />
+            <div class="lable1">25%</div>
+            <div class="lable2"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <!-- --------------------------------------------- -->
+          <div class="image_info">
+            <div class="heading">
+              <h3>white Traditional</h3>
+              <p>$3.99</p>
+            </div>
+            <!-- ---------------------------- -->
+            <div class="head_info">
+              <h3>long dress</h3>
+              <p>$5.99</p>
+            </div>
+            <div class="circle">
+              <div class="cir1">
+                <div class="cir_x"></div>
+                <div class="cir_y"></div>
+                <div class="cir_z"></div>
+              </div>
+              <div class="cir2">
+                <div class="cir_x">S</div>
+                <div class="cir_x">M</div>
+                <div class="cir_x">L</div>
+              </div>
+            </div>
+            <div class="rating">
+              <p>4.8</p>
+              <span>BUY +</span>
+            </div>
+          </div>
+        </div>
+        <div class="main_2">
+          <div class="additional">
+            <div class="idea">
+              <p>Monday Happy</p>
+              <span>#MONHPY</span>
+            </div>
+            <div class="off">
+              <p>20%</p>
+              <span>Off</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------Cart START------------------- -->
+
+      <div class="main">
+        <div class="main_1">
+          <div class="image_div">
+            <img src="02.jpg" alt="" />
+            <div class="lable1">25%</div>
+            <div class="lable2"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <!-- --------------------------------------------- -->
+          <div class="image_info">
+            <div class="heading">
+              <h3>white Traditional</h3>
+              <p>$3.99</p>
+            </div>
+            <!-- ---------------------------- -->
+            <div class="head_info">
+              <h3>long dress</h3>
+              <p>$5.99</p>
+            </div>
+            <div class="circle">
+              <div class="cir1">
+                <div class="cir_x"></div>
+                <div class="cir_y"></div>
+                <div class="cir_z"></div>
+              </div>
+              <div class="cir2">
+                <div class="cir_x">S</div>
+                <div class="cir_x">M</div>
+                <div class="cir_x">L</div>
+              </div>
+            </div>
+            <div class="rating">
+              <p>4.8</p>
+              <span>BUY +</span>
+            </div>
+          </div>
+        </div>
+        <div class="main_2">
+          <div class="additional">
+            <div class="idea">
+              <p>Monday Happy</p>
+              <span>#MONHPY</span>
+            </div>
+            <div class="off">
+              <p>20%</p>
+              <span>Off</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------Cart START------------------- -->
+
+      <div class="main">
+        <div class="main_1">
+          <div class="image_div">
+            <img src="03.jpg" alt="" />
+            <div class="lable1">25%</div>
+            <div class="lable2"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <!-- --------------------------------------------- -->
+          <div class="image_info">
+            <div class="heading">
+              <h3>white Traditional</h3>
+              <p>$3.99</p>
+            </div>
+            <!-- ---------------------------- -->
+            <div class="head_info">
+              <h3>long dress</h3>
+              <p>$5.99</p>
+            </div>
+            <div class="circle">
+              <div class="cir1">
+                <div class="cir_x"></div>
+                <div class="cir_y"></div>
+                <div class="cir_z"></div>
+              </div>
+              <div class="cir2">
+                <div class="cir_x">S</div>
+                <div class="cir_x">M</div>
+                <div class="cir_x">L</div>
+              </div>
+            </div>
+            <div class="rating">
+              <p>4.8</p>
+              <span>BUY +</span>
+            </div>
+          </div>
+        </div>
+        <div class="main_2">
+          <div class="additional">
+            <div class="idea">
+              <p>Monday Happy</p>
+              <span>#MONHPY</span>
+            </div>
+            <div class="off">
+              <p>20%</p>
+              <span>Off</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------Cart START------------------- -->
+
+      <div class="main">
+        <div class="main_1">
+          <div class="image_div">
+            <img src="04.jpg" alt="" />
+            <div class="lable1">25%</div>
+            <div class="lable2"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <!-- --------------------------------------------- -->
+          <div class="image_info">
+            <div class="heading">
+              <h3>white Traditional</h3>
+              <p>$3.99</p>
+            </div>
+            <!-- ---------------------------- -->
+            <div class="head_info">
+              <h3>long dress</h3>
+              <p>$5.99</p>
+            </div>
+            <div class="circle">
+              <div class="cir1">
+                <div class="cir_x"></div>
+                <div class="cir_y"></div>
+                <div class="cir_z"></div>
+              </div>
+              <div class="cir2">
+                <div class="cir_x">S</div>
+                <div class="cir_x">M</div>
+                <div class="cir_x">L</div>
+              </div>
+            </div>
+            <div class="rating">
+              <p>4.8</p>
+              <span>BUY +</span>
+            </div>
+          </div>
+        </div>
+        <div class="main_2">
+          <div class="additional">
+            <div class="idea">
+              <p>Monday Happy</p>
+              <span>#MONHPY</span>
+            </div>
+            <div class="off">
+              <p>20%</p>
+              <span>Off</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
