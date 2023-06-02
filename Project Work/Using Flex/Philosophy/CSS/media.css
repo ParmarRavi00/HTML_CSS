@@ -116,7 +116,115 @@
 
 /* Popular section START */
 
+.Popular_section{
+    padding: 80px 40px;
+}
+
+.Popular_section .post{
+    width: 100%;
+}
+
+.post h3{
+    text-align: center;
+}
+
+.post .post_row{
+    margin-top: 0px;
+}
+
+.post .post_row .single_post{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.Popular_section .about{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.about h3{
+    text-align: center;
+}
+
+.about ul {
+    text-align: center;
+}
+
+.about ul li{
+    font-size: 26px;
+}
+
 
 /* Popular section END */
+
+
+/* Tag section START */
+
+.tag_section .tag_contant{
+    width: 90%;
+}
+
+/* Tag section END */
+
+
+/* Footer START */
+
+/* Footer Top START */
+
+.footer_top .top_left{
+    width: 100%;
+}
+
+.top_left .top_left_contant{
+    width: 100%;
+    text-align: center;
+}
+
+.top_left .top_left_contant h4{
+    line-height: 70px;
+    margin-bottom: 10px;
+}
+
+.top_left .top_left_contant h4::after{
+    width: 100%;
+}
+
+.top_left .top_left_contant li {
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.03);
+    
+}
+
+.footer_top .top_right{
+    width: 100%;
+    text-align: center;
+}
+
+.footer_top .top_right h4::after{
+    width: 100%;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+.footer_top .top_right .mail{
+    width: 100%;
+}
+
+/* Footer Top End */
+
+/* Footer Bottom START */
+
+.footer_contant .footer_bottom{
+    text-align: center;
+    line-height: 30px;
+}
+
+footer .footer_bottom .line::after{
+    display: none;
+}
+
+/* Footer Bottom END */
+
+/* Footer END */
+
 
 }
