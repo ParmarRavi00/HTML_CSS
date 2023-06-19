@@ -1,3 +1,13 @@
+// ========== Typing Animation ==========
+
+var typed = new Typed(".typing", {
+  Strings: ["Full Stack Developer", "Web Designer", "Web Developer", "Electrical Engineer", "Lifelong Learner"],
+    typeSpeed:50,
+    backSpeed:20,
+    loop:true
+})
+
+
 // ========== Show Sidebar ==========
 
 const navMenu = document.getElementById("sidebar"),
@@ -5,7 +15,7 @@ const navMenu = document.getElementById("sidebar"),
     navClose = document.getElementById("nav_close");
 
 
-// ========== Sidebar Show ==========
+// ---------- Sidebar Show ----------
 
 // Validate If Constant Exists
 
@@ -16,7 +26,7 @@ if (navToggle) {
 }
 
 
-// ========== Sidebar Hidden ==========
+// ---------- Sidebar Hidden ----------
 
 // Validate If Constant Exists
 
