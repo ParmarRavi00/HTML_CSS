@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{box-sizing: border-box;}
+        .main 
+        {
+            /* height: 200px; */
+            background: gray;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .main .x 
+        {
+            width: 25%;
+            height: 200px;
+            border:2px solid;
+        }
+
+        .test 
+        {
+            /* height: 100px; */
+            background: red;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .test .prd 
+        {
+            width: 33.33%;
+            border: 2px solid;
+            height: 100px;
+        }
+
+        @media(max-width:500px)
+        {
+            .main .x {width: 100%;}
+            .test .prd {width: 50%;}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="x">x1</div>
+        <div class="x">x2</div>
+        <div class="x">x3</div>
+        <div class="x">x4</div>
+    </div>
+
+
+    <div class="test">
+        <div class="prd">p1</div>
+        <div class="prd">p1</div>
+        <div class="prd">p1</div>
+        
+    </div>
+    
+</body>
+</html>

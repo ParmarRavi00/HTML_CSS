@@ -1,0 +1,64 @@
+
+*{box-sizing: border-box;margin: 0;padding: 0;}
+.header
+{
+    height: 100px;
+    background: gray;
+    display: grid;
+    grid-template-columns: 20fr 80fr;
+}
+.header .x
+{
+    border: 2px solid;
+}
+
+.slider 
+{
+    height: 400px;
+    background: url(../images/banner3.jpg);
+    background-size: cover;
+}
+
+.slider .info
+{
+    height: 400px;
+    background: rgba(0,0,0,.45);
+    color:#fff;
+    text-align: center;
+}
+
+.dp 
+{
+    height: 50px;
+    width: 450px;
+    background: lightgreen;
+    margin: auto;
+    line-height: 50px;
+    border-radius: 50px;
+}
+
+.dp select 
+{
+    border:none ;
+    background: transparent;
+}
+
+.offers 
+{
+    /* height: 350px; */
+    background: lightsalmon;
+    padding: 35px;
+}
+.offers .slideImages 
+{
+   
+    background: darkgoldenrod;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 300px 300px;
+}
+
+.offers .slideImages .x 
+{
+    border: 2px solid;
+}

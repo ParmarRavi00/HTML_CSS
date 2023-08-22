@@ -1,0 +1,31 @@
+
+
+@media(max-width:1100px)
+{
+    .header .logo{width: 100%;}
+    .header .nav{width: 100%;}
+    .header .btn{width: 100%;}
+    .header .nav li{display: block;}
+    .banner .info{width: 100%;}
+    .banner .bannerImg{width: 100%;}
+}
+
+@media(max-width:900px)
+{
+    .header .logo{width: 100%;}
+    .header .nav{width: 100%;}
+    .header .btn{width: 100%;}
+    .header .nav li{display: block;}
+    .banner .info{width: 100%;}
+    .banner .bannerImg{width: 100%;}
+}
+
+@media(max-width:500px)
+{
+    .header .logo{width: 100%;}
+    .header .nav{width: 100%;}
+    .header .btn{width: 100%;}
+    .header .nav li{display: block;}
+    .banner .info{width: 100%;}
+    .banner .bannerImg{width: 100%;}
+}

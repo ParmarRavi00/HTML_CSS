@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+
+    <style>
+      .x {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        margin: 150px auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .x .fa-gift {
+        color: white;
+        font-size: 30px;
+        z-index: 1;
+      }
+
+      .x::before {
+        content: " ";
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100px;
+        height: 100px;
+        background-color: bisque;
+        transform: scale(0);
+        transition: 0.5s;
+      }
+
+      .x:hover::before {
+        transform: scale(1);
+      }
+
+      .x:hover .fa-gift {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="x">
+      <i class="fa fa-gift" aria-hidden="true"></i>
+    </div>
+  </body>
+</html>
