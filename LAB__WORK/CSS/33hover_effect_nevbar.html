@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hover_Effect_Navbar</title>
     <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+
       ul {
         list-style-type: none;
         background-color: cadetblue;
@@ -14,6 +20,7 @@
         padding-left: 350px;
         border-radius: 15px;
       }
+
       ul li {
         display: inline;
         margin-left: 70px;
@@ -21,6 +28,7 @@
         font-weight: bold;
         position: relative;
       }
+
       li::before {
         content: "";
         width: 0px;
@@ -29,8 +37,8 @@
         position: absolute;
         top: 100%;
         left: 0%;
-        transition: 1s;
       }
+
       li:hover::before {
         width: 100%;
         left: 0%;

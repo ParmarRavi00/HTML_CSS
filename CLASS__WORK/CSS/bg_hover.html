@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      }
+
+      .main {
+        height: 300px;
+        width: 550px;
+        border: 15px solid rgba(0, 0, 0, 0.2);
+        background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg);
+        background-position: -30px 0px;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: relative;
+      }
+
+      .main:hover {
+        background-position: 0px 0px;
+      }
+
+      h2 {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        font-size: 30px;
+        font-weight: normal;
+        color: white;
+        letter-spacing: 10px;
+        z-index: 99;
+      }
+
+      h2 span {
+        font-weight: bolder;
+        color: red;
+      }
+
+      .under {
+        height: 200px;
+        width: 450px;
+        border: 4px solid white;
+        margin-left: -30px;
+        transition: 0.4s;
+        font-size: 20px;
+        color: white;
+        letter-spacing: 10px;
+        opacity: 0;
+      }
+
+      .under p {
+        transform: translate(200px, 100px);
+      }
+
+      .main:hover .under {
+        margin-left: 0px;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h2><span>F</span>ALL AHEAD</h2>
+      <div class="under">
+        <p>New Arrivals</p>
+      </div>
+    </div>
+  </body>
+</html>

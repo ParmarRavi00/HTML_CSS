@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+
+      .main {
+        background-color: lightblue;
+        text-align: center;
+        padding: 10px 0px;
+      }
+
+      li {
+        display: inline;
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        margin-right: 20px;
+        position: relative;
+      }
+
+      a::before {
+        content: " ";
+        width: 0%;
+        height: 2px;
+        background-color: brown;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        transition: 1s;
+      }
+
+      li:hover a::before {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <ul>
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="">Services</a>
+        </li>
+        <li>
+          <a href="">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

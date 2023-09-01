@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+
+      .main {
+        width: 250px;
+        margin: auto;
+        box-shadow: 1px 1px 20px black;
+      }
+
+      .img {
+        height: 70%;
+        padding: 30px;
+        position: relative;
+      }
+
+      .img::after {
+        content: "QUICK VIEW";
+        position: absolute;
+        bottom: 100%;
+        left: 0%;
+        width: 100%;
+        text-align: center;
+        padding: 8px 0px;
+        background-color: black;
+        color: white;
+        opacity: 0;
+        transition: 1s;
+      }
+
+      img {
+        transition: 1s;
+      }
+
+      .img:hover img {
+        transform: rotateY(180deg);
+      }
+
+      .img:hover::after {
+        bottom: 8%;
+        opacity: 1;
+      }
+
+      .img::before {
+        content: "New";
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        font-size: 16px;
+        color: white;
+        background-color: red;
+        padding: 3px 13px;
+      }
+
+      .info {
+        height: 30%;
+        text-align: center;
+        padding: 0px 30px 30px;
+      }
+
+      .info h3 {
+        color: red;
+      }
+
+      .info p {
+        font-size: 19px;
+        padding: 10px 0px 15px;
+      }
+
+      .info .button {
+        width: 100%;
+        padding: 5px 0px;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 3px;
+        background-color: #2fdab8;
+        outline: 4px solid transparent;
+        outline-offset: 0px;
+        transition: 0.1s;
+      }
+
+      .button:hover {
+        outline: 4px solid #2fdab8;
+        outline-offset: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="img">
+        <img
+          src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+          height="100%"
+          width="100%"
+          alt=""
+        />
+      </div>
+
+      <div class="info">
+        <h3>Formal Blue Shirt</h3>
+        <p>$45.99 <strike> $69.71</strike></p>
+        <div class="button">ADD TO CART</div>
+      </div>
+    </div>
+  </body>
+</html>
