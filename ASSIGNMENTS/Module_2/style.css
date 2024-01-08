@@ -1,0 +1,22 @@
+/* CSS File (styles.css) */
+/* Normal link styles */
+a {
+    color: #0066cc; /* Set the default link color */
+    text-decoration: none; /* Remove the underline */
+}
+
+/* Link hover effect */
+a:hover {
+    color: #ff9900; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Visited link styles */
+a.visited-link:visited {
+    color: #663399; /* Set the color for visited links */
+}
+
+/* Active link styles */
+a:active {
+    color: #cc0000; /* Set the color for active links (when clicked) */
+}
