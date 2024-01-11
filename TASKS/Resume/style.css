@@ -5,12 +5,9 @@
     font-family: 'Mukta', sans-serif;
 }
 
-
 /* <!-- ---------- Left Side Start ---------- --> */
-
 .main{
     width: 70%;
-    /* border: 2px solid red; */
     padding: 50px;
     background-color: rgb(237, 186, 46);
     display: flex;
@@ -19,7 +16,6 @@
 
 .left{
     width: 32%;
-    /* border: 2px solid red; */
     padding-right: 15px;
 }
 
@@ -62,15 +58,12 @@
 .left_thared b{
     font-size: 1lvw;
 }
-
 /* <!-- ---------- Left Side End ---------- --> */
 
 
 /* <!-- ---------- Right Side Start ---------- --> */
-
 .right{
     width: 68%;
-    /* border: 2px solid black; */
     background-color: white;
     padding: 2lvw 2lvw 8lvw;
 }
@@ -107,14 +100,14 @@
 .skills ul li{
     list-style-position: inside;
 }
-
 /* <!-- ---------- Right Side End ---------- --> */
 
+
+/* ---------- Media Query ---------- */
 
 @media(max-width:1285px){
 
     /* <!-- ---------- Left Side Start ---------- --> */
-
     .left h2{
         font-size: 1.8lvw;
     }
@@ -122,12 +115,10 @@
     .left p{
         font-size: 1.3lvw;
     }
-
     /* <!-- ---------- Left Side End ---------- --> */
 
 
     /* <!-- ---------- Right Side Start ---------- --> */
-
     .right_details .heading h1{
         font-size: 3.5lvw;
     }
@@ -166,7 +157,6 @@
     }
 
         /* <!-- ---------- Left Side Start ---------- --> */
-
         .left_first .img_container{
             width: 22lvw;
             height: 22lvw;
@@ -189,12 +179,9 @@
         .left p{
             font-size: 1.7lvw;
         }
-    
         /* <!-- ---------- Left Side End ---------- --> */
     
-    
         /* <!-- ---------- Right Side Start ---------- --> */
-    
         .right_details .heading h1{
             font-size: 3.9lvw;
         }
@@ -225,7 +212,6 @@
     }
 
         /* <!-- ---------- Left Side Start ---------- --> */
-
         .left_first .img_container{
             width: 22lvw;
             height: 22lvw;
@@ -244,12 +230,9 @@
         .left p{
             font-size: 2.1lvw;
         }
-    
         /* <!-- ---------- Left Side End ---------- --> */
     
-    
         /* <!-- ---------- Right Side Start ---------- --> */
-    
         .right_details .heading h1{
             font-size: 4.3lvw;
         }
@@ -275,12 +258,11 @@
 
 @media(max-width:676px){
 
+    .main{
+        padding: 30px;
+    }
+
         /* <!-- ---------- Left Side Start ---------- --> */
-
-        .main{
-            padding: 30px;
-        }
-
         .left_first .img_container{
             width: 23lvw;
             height: 23lvw;
@@ -298,12 +280,10 @@
         .left p{
             font-size: 2lvw;
         }
-    
         /* <!-- ---------- Left Side End ---------- --> */
     
     
         /* <!-- ---------- Right Side Start ---------- --> */
-
         .right{
             padding: 15px 15px 0px;
         }
@@ -328,4 +308,61 @@
             font-size: 2.2lvw;
         }
         /* <!-- ---------- Right Side End ---------- --> */
+}
+
+
+
+@media(max-width:428px){
+
+    .main{
+        padding: 20px;
+    }
+
+    /* <!-- ---------- Left Side Start ---------- --> */
+    .left h2{
+        font-size: 2.2lvw;
+    }
+
+    .left p{
+        font-size: 2lvw;
+    }
+    
+    .left .left_thared div{
+        line-height: 5px;
+    }
+
+    .left .left_thared div b{
+        padding-bottom: 5px;
+    }
+
+    .left_first h2, .left_second h2, .left_thared h2{
+        padding-bottom: 8px;
+    }
+    /* <!-- ---------- Left Side End ---------- --> */
+
+    /* <!-- ---------- Right Side Start ---------- --> */
+    .right{
+        padding: 10px;
+    }
+
+    .right_details .heading h1{
+        font-size: 4.3lvw;
+    }
+
+    .right_details .heading p{
+        font-size: 2.2lvw;
+    }
+
+    .right h2{
+        font-size: 2.4lvw;
+    }
+
+    .right h4{
+        font-size: 2.2lvw;
+    }
+
+    .right p, li{
+        font-size: 2.2lvw;
+    }
+    /* <!-- ---------- Right Side End ---------- --> */
 }
