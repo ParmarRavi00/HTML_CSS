@@ -1,0 +1,331 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+
+/* <!-- ---------- Left Side Start ---------- --> */
+
+.main{
+    width: 70%;
+    /* border: 2px solid red; */
+    padding: 50px;
+    background-color: rgb(237, 186, 46);
+    display: flex;
+    margin: auto;
+}
+
+.left{
+    width: 32%;
+    /* border: 2px solid red; */
+    padding-right: 15px;
+}
+
+.left_first .img_container{
+    width: 18lvw;
+    height: 18lvw;
+    border: 8px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.left_first .img_container img{
+    width: 18lvw;
+    height: 18lvw;
+    scale: 1.1;
+}
+
+.personal_detail, .left_second, .left_thared{
+    padding: 2lvw 0px;
+    border-bottom: 2px solid rgb(60, 59, 59);
+}
+
+.personal_detail .mob_email{
+    padding: 1lvw 0px;
+}
+
+.left .left_second{
+    line-height: 2lvw;
+}
+
+.left_thared{
+    border: none;
+}
+
+.left_thared b{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.left_thared b{
+    font-size: 1lvw;
+}
+
+/* <!-- ---------- Left Side End ---------- --> */
+
+
+/* <!-- ---------- Right Side Start ---------- --> */
+
+.right{
+    width: 68%;
+    /* border: 2px solid black; */
+    background-color: white;
+    padding: 2lvw 2lvw 8lvw;
+}
+
+.right_details .heading h1{
+    font-size: 4lvw;
+    letter-spacing: 1px;
+}
+
+.right_details .heading p{
+    font-size: 1.6lvw;
+    letter-spacing: 1px;
+    padding-bottom: 1lvw;
+}
+
+.education, .skills{
+    padding: 0px 0px 2lvw;
+    border-bottom: 2px solid rgb(60, 59, 59);
+}
+
+.profile h2, .education h2, .skills h2, .declaration h2{
+    padding: 1.5lvw 0px;
+}
+
+.education .edu_main{
+    padding: 1.5lvw 0px 0px;
+}
+
+.education .under_edu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills ul li{
+    list-style-position: inside;
+}
+
+/* <!-- ---------- Right Side End ---------- --> */
+
+
+@media(max-width:1285px){
+
+    /* <!-- ---------- Left Side Start ---------- --> */
+
+    .left h2{
+        font-size: 1.8lvw;
+    }
+
+    .left p{
+        font-size: 1.3lvw;
+    }
+
+    /* <!-- ---------- Left Side End ---------- --> */
+
+
+    /* <!-- ---------- Right Side Start ---------- --> */
+
+    .right_details .heading h1{
+        font-size: 3.5lvw;
+    }
+
+    .right_details .heading p{
+        font-size: 1.8lvw;
+    }
+
+    .right h2{
+        font-size: 2lvw;
+    }
+
+    .right h4{
+        font-size: 1.4lvw;
+    }
+
+    .right p, li{
+        font-size: 1.3lvw;
+    }
+    /* <!-- ---------- Right Side End ---------- --> */
+}
+
+
+@media(max-width:1150px){
+
+    .main{
+        width: 80%;
+    }
+}
+
+
+@media(max-width:950px){
+
+    .main{
+        width: 90%;
+    }
+
+        /* <!-- ---------- Left Side Start ---------- --> */
+
+        .left_first .img_container{
+            width: 22lvw;
+            height: 22lvw;
+            border: 5px solid white;
+        }
+        
+        .left_first .img_container img{
+            width: 22lvw;
+            height: 22lvw;
+        }
+
+        .left .left_second{
+            line-height: 2.5lvw;
+        }
+
+        .left h2{
+            font-size: 2.2lvw;
+        }
+    
+        .left p{
+            font-size: 1.7lvw;
+        }
+    
+        /* <!-- ---------- Left Side End ---------- --> */
+    
+    
+        /* <!-- ---------- Right Side Start ---------- --> */
+    
+        .right_details .heading h1{
+            font-size: 3.9lvw;
+        }
+    
+        .right_details .heading p{
+            font-size: 2.2lvw;
+        }
+    
+        .right h2{
+            font-size: 2.4lvw;
+        }
+    
+        .right h4{
+            font-size: 1.8lvw;
+        }
+    
+        .right p, li{
+            font-size: 1.7lvw;
+        }
+        /* <!-- ---------- Right Side End ---------- --> */
+}
+
+
+@media(max-width:800px){
+
+    .main{
+        width: 100%;
+    }
+
+        /* <!-- ---------- Left Side Start ---------- --> */
+
+        .left_first .img_container{
+            width: 22lvw;
+            height: 22lvw;
+            border: 5px solid white;
+        }
+        
+        .left_first .img_container img{
+            width: 22lvw;
+            height: 22lvw;
+        }
+
+        .left h2{
+            font-size: 2.5lvw;
+        }
+    
+        .left p{
+            font-size: 2.1lvw;
+        }
+    
+        /* <!-- ---------- Left Side End ---------- --> */
+    
+    
+        /* <!-- ---------- Right Side Start ---------- --> */
+    
+        .right_details .heading h1{
+            font-size: 4.3lvw;
+        }
+    
+        .right_details .heading p{
+            font-size: 2.6lvw;
+        }
+    
+        .right h2{
+            font-size: 2.8lvw;
+        }
+    
+        .right h4{
+            font-size: 2.2lvw;
+        }
+    
+        .right p, li{
+            font-size: 2.1lvw;
+        }
+        /* <!-- ---------- Right Side End ---------- --> */
+}
+
+
+@media(max-width:676px){
+
+        /* <!-- ---------- Left Side Start ---------- --> */
+
+        .main{
+            padding: 30px;
+        }
+
+        .left_first .img_container{
+            width: 23lvw;
+            height: 23lvw;
+        }
+        
+        .left_first .img_container img{
+            width: 23lvw;
+            height: 23lvw;
+        }
+
+        .left h2{
+            font-size: 2.4lvw;
+        }
+    
+        .left p{
+            font-size: 2lvw;
+        }
+    
+        /* <!-- ---------- Left Side End ---------- --> */
+    
+    
+        /* <!-- ---------- Right Side Start ---------- --> */
+
+        .right{
+            padding: 15px 15px 0px;
+        }
+    
+        .right_details .heading h1{
+            font-size: 4.3lvw;
+        }
+    
+        .right_details .heading p{
+            font-size: 2.2lvw;
+        }
+    
+        .right h2{
+            font-size: 2.4lvw;
+        }
+    
+        .right h4{
+            font-size: 2.2lvw;
+        }
+    
+        .right p, li{
+            font-size: 2.2lvw;
+        }
+        /* <!-- ---------- Right Side End ---------- --> */
+}
